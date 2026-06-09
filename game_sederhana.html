@@ -1,0 +1,37 @@
+    //fungsi permainan
+    function myGame(){
+        let mulai;
+
+        while (true) {
+            let lanjut = confirm("lanjutkan permainan?");
+            //let your name = prompt("masukan nama kamu...");//jika ingin meminta nama pemain
+            if (lanjut == true) {
+                //pertenyaan pertama
+                let quest1 = prompt("2 + 2 = ?");
+                if (quest1 == "4") {
+                    alert("jawaban benar GOKILLL!");
+                } else {
+                    alert("jawaban salah GAWAT KAU NI!");
+                    break;
+                }
+
+                //pertanyaan kedua
+                let quest2 = prompt("5 * 5 = ?");
+                if (quest2 == "25") {
+                    alert("jawaban benar GOKILLL!");
+                } else {
+                    alert("jawaban salah GAWAT KAU NI!");
+                    break;
+                }
+            
+            } else {
+                mulai = "udahan mainnya belum puas apa?";
+                alert(mulai);
+                break;
+               
+
+            }
+        }
+    }
+    </script>
+    <button onclick="myGame()">mainin aku</button>
