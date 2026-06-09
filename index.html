@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ajay belajar Javascript</h1>
+    <script>
+    //     let a = 10;
+    //     console.log(a);
+    //     a = 12;
+    //     console.log(a);
+
+
+    //     alert("hai ajay rax nurmagomedov genjist");
+    //     confirm("aman jay?");
+    //     prompt(".... ");
+
+
+    //     let nama = prompt("masukan nama kamu....");
+    //     alert("hai " + nama);
+
+    //     let b = confirm("");
+    //     console.log(b);
+
+    // a = 20
+    // b = 30
+    // alert(a+b)
+
+    //fungsi permainan
+    function myGame(){
+        let mulai;
+
+        while (true) {
+            let lanjut = confirm("lanjutkan permainan?");
+            //let your name = prompt("masukan nama kamu...");//jika ingin meminta nama pemain
+            if (lanjut == true) {
+                //pertenyaan pertama
+                let quest1 = prompt("2 + 2 = ?");
+                if (quest1 == "4") {
+                    alert("jawaban benar GOKILLL!");
+                } else {
+                    alert("jawaban salah GAWAT KAU NI!");
+                    break;
+                }
+
+                //pertanyaan kedua
+                let quest2 = prompt("5 * 5 = ?");
+                if (quest2 == "25") {
+                    alert("jawaban benar GOKILLL!");
+                } else {
+                    alert("jawaban salah GAWAT KAU NI!");
+                    break;
+                }
+            
+            } else {
+                mulai = "udahan mainnya belum puas apa?";
+                alert(mulai);
+                break;
+               
+
+            }
+        }
+    }
+    </script>
+    <button onclick="myGame()">mainin aku</button>
